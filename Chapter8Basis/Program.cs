@@ -14,6 +14,10 @@ namespace Chapter8Basis
         static void Main(string[] args)
         {
 
+            Order order = new Order();
+            order.product = "Candy Canes";
+            order.amount = 10;
+
 
             Console.WriteLine("=========CreateSeparateServices=========");
             OrderController sep = CreateSeparateServices();
