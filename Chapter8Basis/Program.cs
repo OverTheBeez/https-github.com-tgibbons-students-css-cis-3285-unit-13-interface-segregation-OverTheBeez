@@ -21,12 +21,15 @@ namespace Chapter8Basis
 
             Console.WriteLine("=========CreateSeparateServices=========");
             OrderController sep = CreateSeparateServices();
+            sep.CreateOrder(order);
 
             Console.WriteLine("=========CreateSingleService=========");
             OrderController sing = CreateSingleService();
+            sing.CreateOrder(order);
 
             Console.WriteLine("=========GenericController<Order>=========");
             GenericController<Order> generic = CreateGenericServices();
+            generic.CreateEntity(order);
 
 
             Console.WriteLine("Hit any key to quit");
